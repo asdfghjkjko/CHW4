@@ -1,4 +1,0 @@
-C:\c_code\HW1\temp\debug\HW1.exe
-C:\c_code\2.21\temp\debug\HW1.exe
-C:\HW2\3.17\temp\debug\HW1.exe
-C:\HW3-1\P12\temp\debug\HW1.exe
