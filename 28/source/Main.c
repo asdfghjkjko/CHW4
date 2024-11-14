@@ -1,23 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define SIZE 5
 
-char changeCase(char ch) {
-    if (ch >= 'A' && ch <= 'Z') {
-        return ch + 32;
-    }
-    else if (ch >= 'a' && ch <= 'z') {
-        return ch - 32;
-    }
-    return ch;
+void modifyArray(int b[], int size);
+void modifyElement(int e);
+
+int main(void)
+{
+	int a[SIZE] = { 0,1,2,3,4 };
+	int i;
+
+	printf("Effects of passing entire array by reference:\n\nThe"
+		"values of the original are:\n");
+
+	for (i = 0; i < SIZE; i++)
+	{
+		printf("%3d", a[i]);
+	}
+	printf("\n");
+
+	modifyArray(a, SIZE);
+	printf("The values of the modified array are:\n");
+	for (i = 0; i < SIZE; i++)
+	{
+		printf("%3d", a[i]);
+	}
+	printf("\n\nEffects of passing array element"
+		"by value:\n\nThe value of a[3] is %d\n", a[3]);
+
+	modifyElement(a[3]);
+	printf("The value of a[3] is %d\n", a[3]);
+
+	system("pause");
+	return 0;
 }
 
-int main() {
-    char ch;
-    printf("輸入一個英文字母: ");
-    scanf_s(" %c", &ch);
+void modifyArray(int b[], int size)
+{
+	int j;
 
-    char changed = changeCase(ch);
-    printf("Changed case: %c\n", changed);
+	for (j = 0; j < size; j++)
+	{
+		b[j] *= 2;
+	}
+}
 
-    return 0;
+void modifyElement(int e)
+{
+	printf("Value in modifyElement is %d\n", e *= 2);
 }

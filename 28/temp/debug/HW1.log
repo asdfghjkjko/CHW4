@@ -1,12 +1,4 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Intermediate 目錄。
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
   Main.c
-C:\HW3-2\28\source\Main.c(17,13): warning C4473: 'scanf_s' : 傳遞給格式字串的引數不足
-      C:\HW3-2\28\source\Main.c(17,13):
-      預留位置及其參數需要 2 個 variadic 引數，但卻提供了 1 個
-      C:\HW3-2\28\source\Main.c(17,13):
-      缺少 variadic 引數 2 (其為格式字串 '%c' 所需)
-      C:\HW3-2\28\source\Main.c(17,13):
-      此引數可用為緩衝區大小
-  
-  HW1.vcxproj -> C:\HW3-2\28\temp\debug\HW1.exe
+  HW1.vcxproj -> C:\HW4\28\temp\debug\HW1.exe
